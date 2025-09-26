@@ -1,0 +1,91 @@
+/* GLOBAL NAV STYLES */
+
+.site_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* padding: 1rem 2rem; */
+    color: white;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Home Page Specific Initial Style */
+.home_page .site_header {
+    background-color: transparent;
+}
+
+/* Other Pages Start with Black */
+.site_header:not(.scrolled):not(.home_page .site_header) {
+    background-color: #111;
+}
+
+/* Scroll Effect for All Pages */
+.site_header.scrolled {
+    background-color: #0A5AC2; /* blue on scroll */
+}
+
+/* Logo */
+.logo_container img {
+    height: 100px;
+}
+
+/* Nav Items */
+.main_nav ul,
+.social_nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main_nav ul li,
+.social_nav ul li {
+    margin: 0 10px;
+}
+
+.main_nav ul li a,
+.social_nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main_nav ul li a:hover,
+.social_nav ul li a:hover {
+    color: #512DA8; /* Yellowish hover */
+}
+
+.social_nav ul li img {
+    height: 24px;
+    width: 24px;
+}
+
+#home_cover {
+    height: 100vh;
+    background: url('../assets/images/home/bg_1.jpg') no-repeat center center / cover;
+    position: relative;
+}
+
+/* HERO SECTION: just layout, no background */
+#home_hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    height: calc(100vh - 120px); /* subtract approx header height */
+}
+
+/* Optional blur effect for header */
+.site_header {
+    backdrop-filter: blur(8px);
+}

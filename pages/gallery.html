@@ -5,20 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - The Anchor Collective</title>
+    
+    <!-- CSSSSSSSSSSS Links -->
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+
+    <!-- Scripts Links -->
+     <script src="../scripts/navbar_scroll.js"></script>
 </head>
 <body>
-    <header>
-        <h1>The Anchor Collective</h1>
-        <nav>
+    <header class="site_header">
+        <div class="logo_container">
+            <a href="../index.html">
+                <img src="../assets/logos/anchor_nobg.png" alt="Site Logo">
+            </a>
+        </div>
+
+        <nav class="main_nav">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="programmes.html">Programmes</a></li>
-                <li><a href="blogs.html">Blogs & Stories</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="actions.html">Take Action</a></li>
+                <!-- <li><a href="programmes.html">Programmes</a></li> -->
+                <!-- <li><a href="blogs.html">Blogs & Stories</a></li> -->
+                <!-- <li><a href="events.html">Events</a></li> -->
+                <!-- <li><a href="actions.html">Take Action</a></li> -->
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="social_nav">
+            <ul>
+                <li><a href="#"><img src="../assets/socials_logos/facebook_yellow.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="../assets/socials_logos/twitter_yellow.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="../assets/socials_logos/instagram_yellow.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../assets/socials_logos/youtube_yellow.svg" alt="YouTube"></a></li>
             </ul>
         </nav>
     </header>
@@ -28,97 +50,138 @@
         <p>Take a visual journey through our community activities and events.</p>
         
         <section>
-            <h3>Photo Gallery</h3>
-            
+        <div class="gallery-section">
             <h4>Creative Workshops</h4>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Youth participating in art workshop]"></p>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Poetry writing session]"></p>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Music production class]"></p>
-            
+            <div class="media-grid">
+            <img src="../assets/images/participating.jpg" alt="[Image: Youth participating in art workshop]">
+            <img src="../assets/images/participating.jpg" alt="[Image: Poetry writing session]">
+            <video controls>
+                <source src="../assets/videos/girl_story.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+
+        <div class="gallery-section">
             <h4>Sports Activities</h4>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Soccer tournament action shot]"></p>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Basketball game]"></p>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Running club practice]"></p>
-            
+            <div class="media-grid">
+            <img src="../assets/images/participating.jpg" alt="[Image: Soccer tournament]">
+            <video controls>
+                <source src="../assets/videos/girl_story.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="../assets/images/participating.jpg" alt="[Image: Basketball game]">
+            </div>
+        </div>
+
+        <div class="gallery-section">
             <h4>Community Events</h4>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Faith Night gathering]"></p>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Open Mic performance]"></p>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Community service project]"></p>
-            
+            <div class="media-grid">
+            <img src="../assets/images/participating.jpg" alt="[Image: Open Mic]">
+            <video controls>
+                <source src="../assets/videos/girl_story.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="../assets/images/participating.jpg" alt="[Image: Faith Night]">
+            </div>
+        </div>
+
+        <div class="gallery-section">
             <h4>Special Moments</h4>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Mentor and mentee working together]"></p>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Group celebration]"></p>
-            <p><img src="../assets//images/participating.jpg" alt="[Image: Leadership training session]"></p>
+            <div class="media-grid">
+            <img src="../assets/images/participating.jpg" alt="[Image: Mentor and mentee]">
+            <img src="../assets/images/participating.jpg" alt="[Image: Group celebration]">
+            <video controls>
+                <source src="../assets/videos/girl_story.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
         </section>
         
         <section>
             <h3>Video Gallery</h3>
-            
-            <article>
+
+            <div class="gallery-section">
                 <h4>Testimonials</h4>
-                <p>
-                    <video width="320" height="240" controls>
-                    <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
-                    [Video: Sarah's story - How The Anchor Collective changed my life]
-                    </video>
-                </p>
-                <p>
-                    <video width="320" height="240" controls>
+                <div class="media-grid">
+                    <div>
+                        <video width="320" height="240" controls>
                         <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                        [Video: Sarah's story - How The Anchor Collective changed my life]
+                    </video>
+                    [Video: Sarah's story - How The Anchor Collective changed my life]
+                    </div>
+                    <div>
+                        <video width="320" height="240" controls>
+                            <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                            [Video: Thomas talks about sports mentorship]
+                        </video>
                         [Video: Thomas talks about sports mentorship]
-                    </video>
-                </p>
-                <p>
-                    <video width="320" height="240" controls>
-                        <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                    </div>
+                    <div>
+                        <video width="320" height="240" controls>
+                            <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                            [Video: Volunteer perspectives]
+                        </video>
                         [Video: Volunteer perspectives]
-                    </video>
-                </p>
-            </article>
-            
-            <article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-section">
                 <h4>Event Highlights</h4>
-                <p>
-                                        <video width="320" height="240" controls>
-                    <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                <div class="media-grid">
+                    <div>
+                        <video width="320" height="240" controls>
+                        <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                        [Video: Faith Night September 2025]
+                    </video>
                     [Video: Faith Night September 2025]
+                    </div>
+                    <div>
+                        <video width="320" height="240" controls>
+                        <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                        [Video: Open Mic highlights]
                     </video>
-                </p>
-                <p>
-                                        <video width="320" height="240" controls>
-                    <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
                     [Video: Open Mic highlights]
+                    </div>
+                    <div>
+                        <video width="320" height="240" controls>
+                        <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                        [Video: Soccer tournament finals]
                     </video>
-                </p>
-                <p>
-                                        <video width="320" height="240" controls>
-                    <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
                     [Video: Soccer tournament finals]
-                    </video>
-                </p>
-            </article>
-            
-            <article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-section">
                 <h4>Program Overviews</h4>
-                <p>
-                                        <video width="320" height="240" controls>
-                    <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
-                    [Video: Sarah's story - How The Anchor Collective changed my life]
-                    </video>
-                    [Video: Creative workshops in action]</p>
-                <p>
-                                        <video width="320" height="240" controls>
-                    <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
-                    [Video: Sarah's story - How The Anchor Collective changed my life]
-                    </video>
-                    [Video: A day in our tutoring program]</p>
-                <p>
-                                        <video width="320" height="240" controls>
-                    <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
-                    [Video: Sarah's story - How The Anchor Collective changed my life]
-                    </video>
-                    [Video: Behind the scenes with our volunteers]</p>
-            </article>
+                <div class="media-grid">
+                    <div>
+                        <video width="320" height="240" controls>
+                        <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                        [Video: Sarah's story - How The Anchor Collective changed my life]
+                        </video>
+                        [Video: Creative workshops in action]
+                    </div>
+                    <div>
+                        <video width="320" height="240" controls>
+                        <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                        [Video: Sarah's story - How The Anchor Collective changed my life]
+                        </video>
+                        [Video: A day in our tutoring program]
+                    </div>
+                    <div>
+                        <video width="320" height="240" controls>
+                        <source src="../assets/videos/girl_story.mp4" type="video/mp4" >
+                        [Video: Sarah's story - How The Anchor Collective changed my life]
+                        </video>
+                        [Video: Behind the scenes with our volunteers]
+                    </div>
+                </div>
+            </div>
         </section>
         
         <section>
@@ -133,8 +196,14 @@
                     <label for="photo-email">Email:</label>
                     <input type="email" id="photo-email" name="email"><br><br>
                     
-                    <label for="photo-event">Event/Program:</label>
-                    <input type="text" id="photo-event" name="event"><br><br>
+                    <label for="photo-category">Gallery Category:</label>
+                    <select id="photo-category" name="category">
+                        <option value="">Select a category</option>
+                        <option value="creative">Creative Workshops</option>
+                        <option value="sports">Sports Activities</option>
+                        <option value="community">Community Events</option>
+                        <option value="special">Special Moments</option>
+                    </select><br><br>
                     
                     <label for="photo-date">Date Taken:</label>
                     <input type="date" id="photo-date" name="date"><br><br>
@@ -146,7 +215,7 @@
                     <textarea id="photo-description" name="description" rows="4" cols="50"></textarea><br><br>
                     
                     <input type="checkbox" id="photo-permission" name="permission">
-                    <label for="photo-permission">I have permission to share these photos</label><br><br>
+                    <span class="photo-permission">I have permission to share these photos</span><br><br>
                     
                     <input type="submit" value="Submit Photo">
                 </fieldset>
@@ -154,9 +223,26 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 The Anchor Collective. All rights reserved.</p>
-        <p>Contact us: info@sparkzonehub.org.za | +27 21 123 4567</p>
+    <!-- Footer -->
+    <footer class="site_footer">
+        <div class="footer_content">
+            <!-- Left -->
+            <div class="footer_left">
+                <p>&copy; 2025 The Anchor Collective. All rights reserved.</p>
+            </div>
+
+            <!-- Center -->
+            <div class="footer_center">
+                <div class="footer_logo_wrap">
+                    <img src="../assets/logos/anchor_full_nobg.png" alt="Anchor Collective Logo">
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="footer_right">
+                <p>Contact us: info@theanchorcollective.org.za | +27 21 123 4567</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

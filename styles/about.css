@@ -1,0 +1,337 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* About Hero Section */
+#about_hero {
+    background: url('../assets/images/about/group.jpg') no-repeat center center / cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 2rem;
+    position: relative;
+}
+
+#about_hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#about_hero h2 {
+    z-index: 2;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #about_hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/* end of about hero */
+
+
+/* About about section */
+
+.about_section {
+    padding: 3rem 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.vision_block {
+    display: flex;
+    align-items: stretch;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+/* Header side */
+.vision_header {
+    flex: 1 1 200px;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+}
+
+.vision_header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* Color blocks */
+.vision_header.blue {
+    background-color: #0A5AC2;
+}
+
+.vision_header.purple {
+    background-color: #512DA8;
+}
+
+.vision_header.yellow {
+    background-color: #FFD700;
+    color: #000; /* better contrast on yellow */
+}
+
+/* Text side */
+.vision_text {
+    flex: 2 1 400px;
+    padding: 2rem;
+    background-color: white;
+}
+
+.vision_text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .vision_block {
+        flex-direction: column;
+    }
+
+    .vision_header, .vision_text {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .vision_text {
+        padding: 1.5rem;
+    }
+
+    .vision_header {
+        padding: 1.5rem;
+    }
+}
+
+/* end about abpout section */
+
+/* Team section */
+
+.team_section {
+    padding: 4rem 5%;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.team_section h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.team_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.team_card {
+    position: relative;
+    width: 250px;
+    height: 360px;
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: #333;
+}
+
+.team_card:hover {
+    transform: scale(1.03);
+}
+
+/* Card Front */
+.team_front {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: inherit;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.team_card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 1rem;
+}
+
+.team_card h4 {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+}
+
+.nickname {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.85;
+}
+
+.title {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Bio (Hidden initially) */
+.team_bio {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.9);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    text-align: center;
+    font-size: 0.95rem;
+    z-index: 3;
+    line-height: 1.5;
+}
+
+.team_card:hover .team_bio {
+    opacity: 1;
+}
+
+.team_card:hover .team_front {
+    opacity: 0.15;
+}
+
+/* Themed Background Colors */
+.team_card.blue {
+    background-color: #0A5AC2;
+}
+
+.team_card.purple {
+    background-color: #512DA8;
+}
+
+.team_card.yellow {
+    background-color: #FFD700;
+    color: black;
+}
+
+.team_card.yellow .team_bio {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #FFD700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team_card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+/* Our Team section */
+
+/* impact section */
+
+#about_impact {
+    background: url('../assets/images/community.jpg') no-repeat center center / cover;
+    position: relative;
+    padding: 5rem 5% 6rem;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.impact_overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#about_impact h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Yellow header */
+}
+
+#about_impact p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.impact_stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.impact_item {
+    flex: 1 1 200px;
+    background-color: #1A1A1A;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+    transition: transform 0.3s ease;
+}
+
+.impact_item:hover {
+    transform: translateY(-6px);
+    background-color: #512DA8;
+    color: #FFD700;
+}
+
+.impact_item h4 {
+    font-size: 2rem;
+    color: #2AAFFF;
+    margin-bottom: 0.5rem;
+}
+
+.impact_item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .impact_stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* end impact section */

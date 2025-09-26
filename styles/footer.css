@@ -1,0 +1,66 @@
+.site_footer {
+    background-color: #1A1A1A; /* dark but not full black */
+    color: white;
+    padding: 2rem 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left & Right Text Columns */
+.footer_left,
+.footer_right {
+    flex: 1;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+/* Center Logo */
+.footer_center {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* White Circle Around Logo */
+.footer_logo_wrap {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.footer_logo_wrap img {
+    height: 80px;
+    width: auto;
+    display: block;
+}
+
+/* Responsive stacking */
+@media (max-width: 768px) {
+    .footer_content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_left,
+    .footer_right {
+        text-align: center;
+    }
+
+    .footer_center {
+        margin: 1.5rem 0;
+    }
+}

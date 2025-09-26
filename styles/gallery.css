@@ -1,0 +1,149 @@
+body { 
+  margin: 0;
+  padding:0 ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Base Styles */
+main {
+  padding: 3rem 5%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h2, h3, h4 {
+  color: #512DA8;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Gallery Layout */
+.gallery-section {
+  margin-bottom: 3rem;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+/* Unified Styling for Images and Videos */
+.media-grid img,
+.media-grid video {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.media-grid img:hover,
+.media-grid video:hover {
+  transform: scale(1.03);
+}
+
+/* Headings */
+.gallery-section h4 {
+  font-size: 1.3rem;
+  color: #2AAFFF;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive fallback for very small screens */
+@media (max-width: 480px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form fieldset {
+  border: none;
+  padding: 0;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="file"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form input[type="submit"] {
+  margin-top: 1.5rem;
+  background-color: #512DA8;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2AAFFF;
+}
+
+/* Select Dropdown */
+form select {
+  background-color: #fff;
+}
+
+/* Checkbox */
+form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section p {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section img,
+  video {
+    max-width: 100%;
+  }
+}
+
